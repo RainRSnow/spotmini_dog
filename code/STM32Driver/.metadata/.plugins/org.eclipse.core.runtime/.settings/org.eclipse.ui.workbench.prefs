@@ -1,0 +1,17 @@
+//org.eclipse.ui.commands/state/com.st.stm32cube.ide.mcu.buildanalyzer.showstate/org.eclipse.ui.commands.radioState=human
+//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.jface.textfont
+eclipse.preferences.version=1
+org.eclipse.cdt.debug.ui.ModulesDetailPaneFont=1|\u5FAE\u8F6F\u96C5\u9ED1|10.5|1|WINDOWS|1|-14|0|0|0|700|0|0|0|0|3|2|1|34|\u5FAE\u8F6F\u96C5\u9ED1;
+org.eclipse.cdt.internal.ui.compare.AsmMergeViewer=1|\u5FAE\u8F6F\u96C5\u9ED1|10.5|1|WINDOWS|1|-14|0|0|0|700|0|0|0|0|3|2|1|34|\u5FAE\u8F6F\u96C5\u9ED1;
+org.eclipse.cdt.internal.ui.compare.CMergeViewer=1|\u5FAE\u8F6F\u96C5\u9ED1|10.5|1|WINDOWS|1|-14|0|0|0|700|0|0|0|0|3|2|1|34|\u5FAE\u8F6F\u96C5\u9ED1;
+org.eclipse.cdt.make.internal.ui.compare.MakefileMergeViewer=1|\u5FAE\u8F6F\u96C5\u9ED1|10.5|1|WINDOWS|1|-14|0|0|0|700|0|0|0|0|3|2|1|34|\u5FAE\u8F6F\u96C5\u9ED1;
+org.eclipse.cdt.ui.buildconsole.ConsoleFont=1|\u5FAE\u8F6F\u96C5\u9ED1|10.5|1|WINDOWS|1|-14|0|0|0|700|0|0|0|0|3|2|1|34|\u5FAE\u8F6F\u96C5\u9ED1;
+org.eclipse.cdt.ui.editors.textfont=1|\u5FAE\u8F6F\u96C5\u9ED1|10.5|1|WINDOWS|1|-14|0|0|0|700|0|0|0|0|3|2|1|34|\u5FAE\u8F6F\u96C5\u9ED1;
+org.eclipse.compare.contentmergeviewer.TextMergeViewer=1|\u5FAE\u8F6F\u96C5\u9ED1|10.5|1|WINDOWS|1|-14|0|0|0|700|0|0|0|0|3|2|1|34|\u5FAE\u8F6F\u96C5\u9ED1;
+org.eclipse.debug.ui.DetailPaneFont=1|\u5FAE\u8F6F\u96C5\u9ED1|10.5|1|WINDOWS|1|-14|0|0|0|700|0|0|0|0|3|2|1|34|\u5FAE\u8F6F\u96C5\u9ED1;
+org.eclipse.debug.ui.MemoryViewTableFont=1|\u5FAE\u8F6F\u96C5\u9ED1|10.5|1|WINDOWS|1|-14|0|0|0|700|0|0|0|0|3|2|1|34|\u5FAE\u8F6F\u96C5\u9ED1;
+org.eclipse.debug.ui.consoleFont=1|\u5FAE\u8F6F\u96C5\u9ED1|10.5|1|WINDOWS|1|-14|0|0|0|700|0|0|0|0|3|2|1|34|\u5FAE\u8F6F\u96C5\u9ED1;
+org.eclipse.jface.textfont=1|\u5FAE\u8F6F\u96C5\u9ED1|10.5|1|WINDOWS|1|-14|0|0|0|700|0|0|0|0|3|2|1|34|\u5FAE\u8F6F\u96C5\u9ED1;
+terminal.views.view.font.definition=1|\u5FAE\u8F6F\u96C5\u9ED1|10.5|1|WINDOWS|1|-14|0|0|0|700|0|0|0|0|3|2|1|34|\u5FAE\u8F6F\u96C5\u9ED1;

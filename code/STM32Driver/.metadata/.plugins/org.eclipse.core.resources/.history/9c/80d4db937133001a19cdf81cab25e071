@@ -1,0 +1,116 @@
+/*
+ * pca9685.h
+ *
+ *  Created on: Jan 9, 2020
+ *      Author: HardWare
+ * 说明：
+ *             I2C地址说明：  1   A5   A4  A3  A2  A1  A0  R/W0     A0 - A5 由硬件决定
+ *
+ */
+
+
+#ifndef _PCA9685_H_
+#define _PCA9685_H_
+#include "stm32f1xx_hal.h"
+
+/**************PCA9685寄存器定义*********************/
+#define PCA9685_MODE1                           0x00H
+#define PCA9685_MODE2                           0x01H
+#define PCA9685_SUBADR1                       0x02H
+#define PCA9685_SUBADR2                       0x03H
+#define PCA9685_SUBADR3                       0x04H
+#define PCA9685_ALLCALLADR                 0x05H
+
+#define  PCA9685_LED0_ON_L                    0x06H
+#define  PCA9685_LED0_ON_H                   0x07H
+#define  PCA9685_LED0_OFF_L                   0x08H
+#define  PCA9685_LED0_OFF_H                  0x09H
+
+#define  PCA9685_LED1_ON_L                    0x0AH
+#define  PCA9685_LED1_ON_H                   0x0BH
+#define  PCA9685_LED1_OFF_L                   0x0CH
+#define  PCA9685_LED1_OFF_H                  0x0DH
+
+#define  PCA9685_LED2_ON_L                    0x0EH
+#define  PCA9685_LED2_ON_H                   0x0FH
+#define  PCA9685_LED2_OFF_L                   0x10H
+#define  PCA9685_LED2_OFF_H                  0x11H
+
+#define  PCA9685_LED3_ON_L                    0x12H
+#define  PCA9685_LED3_ON_H                   0x13H
+#define  PCA9685_LED3_OFF_L                   0x14H
+#define  PCA9685_LED3_OFF_H                  0x15H
+
+#define  PCA9685_LED4_ON_L 					 0x16H
+#define  PCA9685_LED4_ON_H 					 0x17H
+#define  PCA9685_LED4_OFF_L  					 0x18H
+#define  PCA9685_LED4_OFF_H 					 0x19H
+
+#define  PCA9685_LED5_ON_L 					 0x1AH
+#define  PCA9685_LED5_ON_H 					 0x1bH
+#define  PCA9685_LED5_OFF_L 					 0x1CH
+#define  PCA9685_LED5_OFF_H                  0x1DH
+#define  PCA9685_LED6_ON_L 					 0x1EH
+#define  PCA9685_LED6_ON_H 				  	 0x1FH
+#define  PCA9685_LED6_OFF_L 					 0x20H
+#define  PCA9685_LED6_OFF_H 					 0x21H
+#define  PCA9685_LED7_ON_L 					 0x22H
+#define  PCA9685_LED7_ON_H 					 0x23H
+#define  PCA9685_LED7_OFF_L 					 0x24H
+#define  PCA9685_LED7_OFF_H 					 0x25H
+#define  PCA9685_LED8_ON_L 					 0x26H
+#define  PCA9685_LED8_ON_H 					 0x27H
+#define  PCA9685_LED8_OFF_L 					 0x28H
+#define  PCA9685_LED8_OFF_H 					 0x29H
+#define  PCA9685_LED9_ON_L 					 0x2AH
+#define  PCA9685_LED9_ON_H 					 0x2BH
+#define  PCA9685_LED9_OFF_L 					 0x2CH
+#define  PCA9685_LED9_OFF_H 					 0x2DH
+#define  PCA9685_LED10_ON_L 				 0x2EH
+#define  PCA9685_LED10_ON_H 				 0x2FH
+#define  PCA9685_LED10_OFF_L 				 0x30H
+#define  PCA9685_LED10_OFF_H 				 0x31H
+#define  PCA9685_LED11_ON_L 				 0x32H
+#define  PCA9685_LED11_ON_H 				 0x33H
+#define  PCA9685_LED11_OFF_L 	     		 0x34H
+#define  PCA9685_LED11_OFF_H 				 0x35H
+#define  PCA9685_LED12_ON_L 				 0x36H
+#define  PCA9685_LED12_ON_H 				 0x37H
+#define  PCA9685_LED12_OFF_L 				 0x38H
+#define  PCA9685_LED12_OFF_H 				 0x39H
+#define  PCA9685_LED13_ON_L 				 0x3AH
+#define  PCA9685_LED13_ON_H 				 0x3BH
+#define  PCA9685_LED13_OFF_L 				 0x3CH
+#define  PCA9685_LED13_OFF_H 				 0x3DH
+#define  PCA9685_LED14_ON_L 				 0x3EH
+#define  PCA9685_LED14_ON_H 				 0x3FH
+#define  PCA9685_LED14_OFF_L 				 0x40H
+#define  PCA9685_LED14_OFF_H 				 0x41H
+#define  PCA9685_LED15_ON_L 				 0x42H
+#define  PCA9685_LED15_ON_H 				 0x43H
+#define  PCA9685_LED15_OFF_L 				 0x44H
+#define  PCA9685_LED15_OFF_H 				 0x45H
+
+#define  PCA9685_ALL_LED_ON_L              0xFAH
+#define  PCA9685_ALL_LED_ON_H             0xFBH
+#define  PCA9685_ALL_LED_OFF_L             0xFCH
+#define  PCA9685_ALL_LED_OFF_H            0xFDH
+
+#define PCA9685_PRE_SCALE                     0xFEH
+#define PCA9685_TESTMODE                     0xFFH
+
+typedef struct
+{
+	uint8_t RESTART_7;
+	uint8_t EXTCLK_6;
+	uint8_t AI_5;
+	uint8_t SLEEP_4;
+	uint8_t SUB1_3;
+	uint8_t SUB2_2;
+	uint8_t SUB3_1;
+	uint8_t ALLCALL_0;
+
+}PCA9685_MODE1_REG;
+
+
+#endif

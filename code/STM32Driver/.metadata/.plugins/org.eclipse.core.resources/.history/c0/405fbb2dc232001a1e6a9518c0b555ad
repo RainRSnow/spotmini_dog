@@ -1,0 +1,16 @@
+/*
+ * pca9685.h
+ *
+ *  Created on: Jan 9, 2020
+ *      Author: HardWare
+ * 说明：
+ *             I2C地址说明：  1   A5   A4  A3 A2 A1 A0 R/W0
+ */
+
+
+#ifndef _PCA9685_H_
+#define _PCA9685_H_
+#include "stm32f1xx_hal.h"
+
+
+#endif
